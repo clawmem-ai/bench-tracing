@@ -441,3 +441,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 107.113 | 106.910 | 110.808 | 104.087 | 110.808 |
 | run-view | 5 | 150.108 | 147.154 | 169.358 | 140.472 | 169.358 |
 
+
+<!-- trace-bench:6d0565bd07fff9748c74d6e56cca6ffcdd64d97a -->
+## 2026-04-11 09:36:58 UTC
+
+- PR: [#1195](https://github.com/pingcap/agent-git-service/pull/1195) build(deps-dev): bump basic-ftp from 5.2.1 to 5.2.2 in /web
+- PR resolution: resolved
+- Author: @dependabot[bot]
+- PR merged at: 2026-04-11T09:34:50Z
+- Merge commit: `6d0565bd07fff9748c74d6e56cca6ffcdd64d97a`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24279705159)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 46.664 | 46.992 | 48.700 | 44.647 | 48.700 |
+| auth-status | 5 | 46.273 | 45.473 | 49.379 | 44.277 | 49.379 |
+| auth-logout | 5 | 37.306 | 37.416 | 37.681 | 36.548 | 37.681 |
+| repo-create | 5 | 57.429 | 56.695 | 60.556 | 55.344 | 60.556 |
+| repo-view | 5 | 81.338 | 80.508 | 87.819 | 76.418 | 87.819 |
+| repo-clone | 5 | 153.687 | 145.954 | 176.891 | 145.021 | 176.891 |
+| issue-create | 5 | 132.026 | 131.069 | 135.107 | 130.157 | 135.107 |
+| issue-list | 5 | 59.630 | 60.072 | 61.172 | 57.705 | 61.172 |
+| issue-view | 5 | 76.868 | 75.478 | 80.572 | 73.048 | 80.572 |
+| pr-create | 5 | 225.719 | 223.947 | 230.158 | 222.801 | 230.158 |
+| pr-list | 5 | 66.310 | 65.703 | 68.753 | 64.890 | 68.753 |
+| pr-view | 5 | 116.899 | 117.892 | 118.863 | 112.248 | 118.863 |
+| pr-merge | 5 | 117.090 | 117.857 | 119.119 | 115.079 | 119.119 |
+| workflow-list | 5 | 51.599 | 51.180 | 54.974 | 48.842 | 54.974 |
+| workflow-run | 5 | 85.180 | 86.433 | 87.014 | 81.276 | 87.014 |
+| run-view | 5 | 124.262 | 118.945 | 147.604 | 115.707 | 147.604 |
+

@@ -503,3 +503,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 100.341 | 100.301 | 105.244 | 97.424 | 105.244 |
 | run-view | 5 | 138.741 | 135.123 | 157.609 | 129.165 | 157.609 |
 
+
+<!-- trace-bench:700a1c76516b6c4b6fa6a5a2ec9f8a01bb0764d7 -->
+## 2026-04-12 15:15:37 UTC
+
+- PR: [#1198](https://github.com/pingcap/agent-git-service/pull/1198) chore: remove web frontend and clean stale references
+- PR resolution: resolved
+- Author: @zhangyangyu
+- PR merged at: 2026-04-12T15:13:20Z
+- Merge commit: `700a1c76516b6c4b6fa6a5a2ec9f8a01bb0764d7`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24309751841)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 52.544 | 53.085 | 54.111 | 50.822 | 54.111 |
+| auth-status | 5 | 53.803 | 53.414 | 56.365 | 51.694 | 56.365 |
+| auth-logout | 5 | 43.429 | 42.787 | 46.902 | 41.629 | 46.902 |
+| repo-create | 5 | 64.565 | 63.402 | 70.201 | 61.698 | 70.201 |
+| repo-view | 5 | 96.497 | 91.803 | 111.832 | 89.585 | 111.832 |
+| repo-clone | 5 | 167.658 | 165.872 | 178.923 | 160.420 | 178.923 |
+| issue-create | 5 | 148.191 | 145.559 | 154.890 | 141.252 | 154.890 |
+| issue-list | 5 | 68.419 | 67.162 | 75.773 | 64.280 | 75.773 |
+| issue-view | 5 | 90.925 | 89.875 | 96.191 | 85.796 | 96.191 |
+| pr-create | 5 | 258.801 | 258.883 | 266.951 | 249.500 | 266.951 |
+| pr-list | 5 | 72.762 | 72.766 | 74.556 | 70.070 | 74.556 |
+| pr-view | 5 | 143.170 | 136.995 | 171.194 | 131.400 | 171.194 |
+| pr-merge | 5 | 142.898 | 143.052 | 145.553 | 140.494 | 145.553 |
+| workflow-list | 5 | 54.175 | 54.397 | 55.384 | 52.920 | 55.384 |
+| workflow-run | 5 | 98.037 | 99.008 | 102.399 | 94.038 | 102.399 |
+| run-view | 5 | 136.783 | 128.693 | 159.517 | 127.870 | 159.517 |
+

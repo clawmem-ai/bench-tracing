@@ -596,3 +596,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 132.067 | 103.597 | 242.274 | 100.439 | 242.274 |
 | run-view | 5 | 147.149 | 144.453 | 164.868 | 135.397 | 164.868 |
 
+
+<!-- trace-bench:1a089168847c27c0ec0c5ae6ec06deb5fcf3bf85 -->
+## 2026-04-13 07:56:54 UTC
+
+- PR: [#1201](https://github.com/pingcap/agent-git-service/pull/1201) Add .test to .gitignore
+- PR resolution: resolved
+- Author: @IANTHEREAL
+- PR merged at: 2026-04-13T07:54:48Z
+- Merge commit: `1a089168847c27c0ec0c5ae6ec06deb5fcf3bf85`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24332158332)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 46.358 | 45.589 | 49.276 | 45.016 | 49.276 |
+| auth-status | 5 | 47.870 | 47.010 | 52.896 | 45.933 | 52.896 |
+| auth-logout | 5 | 37.035 | 36.988 | 38.175 | 36.058 | 38.175 |
+| repo-create | 5 | 56.424 | 56.973 | 57.990 | 53.614 | 57.990 |
+| repo-view | 5 | 81.392 | 80.838 | 86.647 | 77.283 | 86.647 |
+| repo-clone | 5 | 150.654 | 142.568 | 174.372 | 141.635 | 174.372 |
+| issue-create | 5 | 131.887 | 129.395 | 137.203 | 128.433 | 137.203 |
+| issue-list | 5 | 57.956 | 58.054 | 59.706 | 56.838 | 59.706 |
+| issue-view | 5 | 78.071 | 78.519 | 80.268 | 75.828 | 80.268 |
+| pr-create | 5 | 238.018 | 232.374 | 262.039 | 224.627 | 262.039 |
+| pr-list | 5 | 66.314 | 65.649 | 69.319 | 64.155 | 69.319 |
+| pr-view | 5 | 128.602 | 123.590 | 153.883 | 117.565 | 153.883 |
+| pr-merge | 5 | 119.585 | 119.527 | 127.570 | 114.899 | 127.570 |
+| workflow-list | 5 | 50.875 | 51.259 | 52.403 | 48.656 | 52.403 |
+| workflow-run | 5 | 87.333 | 86.933 | 91.475 | 84.010 | 91.475 |
+| run-view | 5 | 126.583 | 120.434 | 155.073 | 117.028 | 155.073 |
+

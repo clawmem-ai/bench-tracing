@@ -813,3 +813,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 190.709 | 106.991 | 527.673 | 102.964 | 527.673 |
 | run-view | 5 | 129.920 | 129.193 | 139.814 | 122.282 | 139.814 |
 
+
+<!-- trace-bench:f6a5fb28b93b173e6b745d4cfdcefe84fb2b66c1 -->
+## 2026-04-16 23:27:50 UTC
+
+- PR: [#1208](https://github.com/pingcap/agent-git-service/pull/1208) build(deps): bump github.com/jackc/pgx/v5 from 5.6.0 to 5.9.0
+- PR resolution: resolved
+- Author: @dependabot[bot]
+- PR merged at: 2026-04-16T23:24:22Z
+- Merge commit: `f6a5fb28b93b173e6b745d4cfdcefe84fb2b66c1`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24539214011)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 51.130 | 47.664 | 63.011 | 45.219 | 63.011 |
+| auth-status | 5 | 48.689 | 47.954 | 50.661 | 47.569 | 50.661 |
+| auth-logout | 5 | 36.885 | 36.717 | 38.350 | 35.682 | 38.350 |
+| repo-create | 5 | 59.714 | 59.524 | 61.982 | 58.024 | 61.982 |
+| repo-view | 5 | 91.561 | 86.954 | 113.079 | 84.135 | 113.079 |
+| repo-clone | 5 | 163.023 | 157.507 | 185.716 | 156.909 | 185.716 |
+| issue-create | 5 | 151.104 | 149.478 | 159.617 | 147.076 | 159.617 |
+| issue-list | 5 | 65.314 | 65.608 | 66.377 | 63.672 | 66.377 |
+| issue-view | 5 | 85.455 | 86.301 | 88.501 | 80.851 | 88.501 |
+| pr-create | 5 | 255.819 | 248.673 | 281.328 | 247.314 | 281.328 |
+| pr-list | 5 | 83.417 | 75.643 | 112.019 | 74.426 | 112.019 |
+| pr-view | 5 | 144.744 | 140.746 | 164.042 | 137.970 | 164.042 |
+| pr-merge | 5 | 144.063 | 144.282 | 145.064 | 142.984 | 145.064 |
+| workflow-list | 5 | 57.145 | 56.378 | 63.424 | 54.137 | 63.424 |
+| workflow-run | 5 | 100.144 | 101.068 | 103.087 | 94.820 | 103.087 |
+| run-view | 5 | 135.599 | 135.364 | 140.462 | 131.167 | 140.462 |
+

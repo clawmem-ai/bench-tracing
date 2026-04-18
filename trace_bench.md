@@ -844,3 +844,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 100.144 | 101.068 | 103.087 | 94.820 | 103.087 |
 | run-view | 5 | 135.599 | 135.364 | 140.462 | 131.167 | 140.462 |
 
+
+<!-- trace-bench:d7dc073620c7e3146590da1e7881df9fb1a72865 -->
+## 2026-04-18 01:44:11 UTC
+
+- PR: [#1209](https://github.com/pingcap/agent-git-service/pull/1209) build(deps): bump github.com/go-git/go-git/v5 from 5.17.1 to 5.18.0
+- PR resolution: resolved
+- Author: @dependabot[bot]
+- PR merged at: 2026-04-18T01:40:44Z
+- Merge commit: `d7dc073620c7e3146590da1e7881df9fb1a72865`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24594030470)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 47.132 | 46.797 | 49.072 | 46.096 | 49.072 |
+| auth-status | 5 | 48.362 | 48.182 | 49.836 | 47.067 | 49.836 |
+| auth-logout | 5 | 37.746 | 37.934 | 38.737 | 36.368 | 38.737 |
+| repo-create | 5 | 60.506 | 58.877 | 67.092 | 58.117 | 67.092 |
+| repo-view | 5 | 84.615 | 84.349 | 86.442 | 83.446 | 86.442 |
+| repo-clone | 5 | 165.572 | 162.149 | 185.523 | 153.870 | 185.523 |
+| issue-create | 5 | 153.102 | 152.594 | 154.594 | 151.557 | 154.594 |
+| issue-list | 5 | 62.905 | 62.269 | 65.436 | 60.553 | 65.436 |
+| issue-view | 5 | 85.085 | 86.331 | 86.953 | 81.515 | 86.953 |
+| pr-create | 5 | 255.048 | 253.587 | 268.417 | 247.169 | 268.417 |
+| pr-list | 5 | 76.254 | 75.795 | 78.890 | 73.851 | 78.890 |
+| pr-view | 5 | 141.330 | 141.113 | 147.568 | 136.906 | 147.568 |
+| pr-merge | 5 | 145.606 | 144.453 | 149.584 | 143.454 | 149.584 |
+| workflow-list | 5 | 55.177 | 55.336 | 55.411 | 54.584 | 55.411 |
+| workflow-run | 5 | 101.798 | 100.585 | 107.031 | 98.633 | 107.031 |
+| run-view | 5 | 142.565 | 138.541 | 163.814 | 131.802 | 163.814 |
+

@@ -906,3 +906,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 118.438 | 113.821 | 148.783 | 106.074 | 148.783 |
 | run-view | 5 | 137.611 | 137.923 | 144.314 | 132.829 | 144.314 |
 
+
+<!-- trace-bench:146951cf0f59c881a0cc7472fb4455843a10ffbd -->
+## 2026-04-21 08:50:51 UTC
+
+- PR: [#1213](https://github.com/pingcap/agent-git-service/pull/1213) docs(clawmem-cc-plugin): drop finalize pipeline from revision plan
+- PR resolution: resolved
+- Author: @Icemap
+- PR merged at: 2026-04-21T08:48:45Z
+- Merge commit: `146951cf0f59c881a0cc7472fb4455843a10ffbd`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24713100797)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 55.157 | 56.281 | 57.138 | 52.362 | 57.138 |
+| auth-status | 5 | 56.269 | 56.354 | 58.838 | 53.097 | 58.838 |
+| auth-logout | 5 | 44.284 | 44.079 | 45.757 | 42.819 | 45.757 |
+| repo-create | 5 | 72.057 | 72.353 | 74.565 | 68.642 | 74.565 |
+| repo-view | 5 | 110.879 | 109.040 | 123.189 | 103.241 | 123.189 |
+| repo-clone | 5 | 195.362 | 190.358 | 224.716 | 178.784 | 224.716 |
+| issue-create | 5 | 176.421 | 177.038 | 179.109 | 170.832 | 179.109 |
+| issue-list | 5 | 77.172 | 75.233 | 85.479 | 74.433 | 85.479 |
+| issue-view | 5 | 102.017 | 105.656 | 110.238 | 92.756 | 110.238 |
+| pr-create | 5 | 313.817 | 304.034 | 354.341 | 296.637 | 354.341 |
+| pr-list | 5 | 98.755 | 94.293 | 114.544 | 90.811 | 114.544 |
+| pr-view | 5 | 174.409 | 174.397 | 177.939 | 168.986 | 177.939 |
+| pr-merge | 5 | 187.451 | 173.729 | 249.448 | 166.092 | 249.448 |
+| workflow-list | 5 | 69.685 | 70.540 | 70.640 | 67.141 | 70.640 |
+| workflow-run | 5 | 128.013 | 121.175 | 154.996 | 115.462 | 154.996 |
+| run-view | 5 | 166.679 | 165.173 | 178.669 | 158.631 | 178.669 |
+

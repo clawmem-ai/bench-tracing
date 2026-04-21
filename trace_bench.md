@@ -937,3 +937,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 128.013 | 121.175 | 154.996 | 115.462 | 154.996 |
 | run-view | 5 | 166.679 | 165.173 | 178.669 | 158.631 | 178.669 |
 
+
+<!-- trace-bench:7f0cb00e743d17bfa844a8a84ac347d16b38aa57 -->
+## 2026-04-21 15:55:39 UTC
+
+- PR: [#1215](https://github.com/pingcap/agent-git-service/pull/1215) chore: track clawmem-codex-plugin as submodule
+- PR resolution: resolved
+- Author: @Icemap
+- PR merged at: 2026-04-21T15:53:45Z
+- Merge commit: `7f0cb00e743d17bfa844a8a84ac347d16b38aa57`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24732389505)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 81.558 | 81.320 | 95.377 | 71.414 | 95.377 |
+| auth-status | 5 | 81.065 | 81.989 | 84.102 | 76.409 | 84.102 |
+| auth-logout | 5 | 63.723 | 62.676 | 70.270 | 56.180 | 70.270 |
+| repo-create | 5 | 99.215 | 100.230 | 103.383 | 92.572 | 103.383 |
+| repo-view | 5 | 147.641 | 146.512 | 154.598 | 139.868 | 154.598 |
+| repo-clone | 5 | 253.906 | 254.171 | 266.085 | 243.625 | 266.085 |
+| issue-create | 5 | 155.626 | 153.791 | 160.328 | 152.066 | 160.328 |
+| issue-list | 5 | 67.067 | 65.673 | 71.039 | 64.459 | 71.039 |
+| issue-view | 5 | 92.144 | 91.434 | 96.829 | 89.554 | 96.829 |
+| pr-create | 5 | 257.195 | 255.991 | 261.419 | 253.446 | 261.419 |
+| pr-list | 5 | 81.279 | 81.756 | 82.243 | 79.395 | 82.243 |
+| pr-view | 5 | 146.955 | 147.512 | 149.833 | 143.977 | 149.833 |
+| pr-merge | 5 | 242.140 | 148.364 | 613.445 | 145.994 | 613.445 |
+| workflow-list | 5 | 63.115 | 62.183 | 66.097 | 60.395 | 66.097 |
+| workflow-run | 5 | 106.919 | 105.130 | 112.858 | 103.706 | 112.858 |
+| run-view | 5 | 148.016 | 143.224 | 174.489 | 137.802 | 174.489 |
+

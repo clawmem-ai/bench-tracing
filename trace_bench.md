@@ -1588,3 +1588,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 108.972 | 108.517 | 120.478 | 99.331 | 120.478 |
 | run-view | 5 | 135.262 | 135.097 | 139.730 | 128.668 | 139.730 |
 
+
+<!-- trace-bench:2dab8f6a27ee64c4d514280e285d5543bc384b48 -->
+## 2026-04-22 22:59:54 UTC
+
+- PR: [#1276](https://github.com/pingcap/agent-git-service/pull/1276) docs: update SSOT module contracts (#1248)
+- PR resolution: resolved
+- Author: @EricZequan
+- PR merged at: 2026-04-22T22:57:50Z
+- Merge commit: `2dab8f6a27ee64c4d514280e285d5543bc384b48`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24806979802)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 54.337 | 53.790 | 58.674 | 51.427 | 58.674 |
+| auth-status | 5 | 56.657 | 53.502 | 64.849 | 51.579 | 64.849 |
+| auth-logout | 5 | 42.896 | 42.108 | 45.704 | 41.896 | 45.704 |
+| repo-create | 5 | 66.611 | 64.696 | 71.719 | 63.041 | 71.719 |
+| repo-view | 5 | 95.724 | 96.056 | 99.435 | 90.602 | 99.435 |
+| repo-clone | 5 | 178.711 | 172.586 | 205.646 | 167.417 | 205.646 |
+| issue-create | 5 | 156.552 | 154.630 | 166.033 | 151.369 | 166.033 |
+| issue-list | 5 | 68.993 | 68.264 | 71.819 | 67.355 | 71.819 |
+| issue-view | 5 | 93.602 | 93.481 | 98.552 | 89.273 | 98.552 |
+| pr-create | 5 | 254.037 | 254.342 | 260.334 | 247.905 | 260.334 |
+| pr-list | 5 | 76.039 | 76.292 | 77.246 | 74.080 | 77.246 |
+| pr-view | 5 | 146.044 | 146.242 | 147.581 | 143.929 | 147.581 |
+| pr-merge | 5 | 150.750 | 150.836 | 154.081 | 146.778 | 154.081 |
+| workflow-list | 5 | 62.255 | 60.878 | 65.419 | 60.322 | 65.419 |
+| workflow-run | 5 | 101.199 | 101.607 | 104.501 | 96.210 | 104.501 |
+| run-view | 5 | 143.724 | 137.865 | 165.232 | 135.965 | 165.232 |
+

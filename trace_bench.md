@@ -1123,3 +1123,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 103.131 | 104.405 | 105.153 | 99.058 | 105.153 |
 | run-view | 5 | 140.315 | 139.877 | 146.094 | 137.539 | 146.094 |
 
+
+<!-- trace-bench:4faecd1b37b0536c92cd3d3d0e20d8509adfa59a -->
+## 2026-04-22 07:13:21 UTC
+
+- PR: [#1231](https://github.com/pingcap/agent-git-service/pull/1231) security: bound tidbcloud error body to 64KB (closes #1219)
+- PR resolution: resolved
+- Author: @EricZequan
+- PR merged at: 2026-04-22T07:11:01Z
+- Merge commit: `4faecd1b37b0536c92cd3d3d0e20d8509adfa59a`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24765293733)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 56.230 | 55.944 | 59.113 | 54.128 | 59.113 |
+| auth-status | 5 | 58.627 | 58.354 | 59.903 | 57.584 | 59.903 |
+| auth-logout | 5 | 48.746 | 46.589 | 58.159 | 45.134 | 58.159 |
+| repo-create | 5 | 69.690 | 69.903 | 71.862 | 67.848 | 71.862 |
+| repo-view | 5 | 104.030 | 102.163 | 111.818 | 99.976 | 111.818 |
+| repo-clone | 5 | 182.292 | 183.860 | 185.441 | 177.066 | 185.441 |
+| issue-create | 5 | 163.205 | 161.865 | 169.518 | 159.303 | 169.518 |
+| issue-list | 5 | 75.563 | 74.413 | 84.141 | 70.082 | 84.141 |
+| issue-view | 5 | 96.563 | 96.117 | 99.130 | 95.155 | 99.130 |
+| pr-create | 5 | 283.291 | 271.084 | 328.076 | 268.354 | 328.076 |
+| pr-list | 5 | 104.296 | 97.970 | 129.417 | 84.028 | 129.417 |
+| pr-view | 5 | 157.644 | 157.034 | 160.810 | 154.726 | 160.810 |
+| pr-merge | 5 | 159.502 | 159.846 | 161.998 | 155.997 | 161.998 |
+| workflow-list | 5 | 64.817 | 65.574 | 67.674 | 60.166 | 67.674 |
+| workflow-run | 5 | 124.172 | 118.592 | 149.659 | 115.647 | 149.659 |
+| run-view | 5 | 156.218 | 156.580 | 159.319 | 153.384 | 159.319 |
+

@@ -1185,3 +1185,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 113.369 | 108.112 | 138.273 | 100.951 | 138.273 |
 | run-view | 5 | 137.238 | 136.464 | 140.256 | 134.317 | 140.256 |
 
+
+<!-- trace-bench:8982a36d4237c2954f80cb3592042883f6b91ca5 -->
+## 2026-04-22 09:48:58 UTC
+
+- PR: [#1239](https://github.com/pingcap/agent-git-service/pull/1239) fix(git): GET/DELETE /git/refs/* and GET /git/matching-refs/* for custom namespaces
+- PR resolution: resolved
+- Author: @ngaut
+- PR merged at: 2026-04-22T09:47:00Z
+- Merge commit: `8982a36d4237c2954f80cb3592042883f6b91ca5`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24771698072)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 44.571 | 44.093 | 47.097 | 43.637 | 47.097 |
+| auth-status | 5 | 46.472 | 46.265 | 47.279 | 45.829 | 47.279 |
+| auth-logout | 5 | 37.935 | 37.275 | 41.602 | 35.904 | 41.602 |
+| repo-create | 5 | 56.175 | 55.525 | 60.795 | 53.447 | 60.795 |
+| repo-view | 5 | 79.954 | 80.330 | 81.917 | 77.150 | 81.917 |
+| repo-clone | 5 | 149.663 | 144.214 | 176.785 | 140.720 | 176.785 |
+| issue-create | 5 | 130.319 | 129.321 | 137.819 | 126.583 | 137.819 |
+| issue-list | 5 | 60.375 | 60.728 | 63.273 | 57.453 | 63.273 |
+| issue-view | 5 | 77.384 | 77.469 | 79.948 | 74.363 | 79.948 |
+| pr-create | 5 | 219.325 | 208.280 | 260.424 | 206.002 | 260.424 |
+| pr-list | 5 | 81.841 | 76.974 | 108.298 | 69.510 | 108.298 |
+| pr-view | 5 | 123.970 | 123.884 | 128.995 | 120.183 | 128.995 |
+| pr-merge | 5 | 128.992 | 124.844 | 149.908 | 121.855 | 149.908 |
+| workflow-list | 5 | 55.129 | 55.362 | 56.935 | 53.854 | 56.935 |
+| workflow-run | 5 | 98.306 | 95.690 | 124.986 | 83.477 | 124.986 |
+| run-view | 5 | 123.610 | 123.463 | 126.927 | 121.618 | 126.927 |
+

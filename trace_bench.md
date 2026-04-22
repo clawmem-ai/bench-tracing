@@ -1619,3 +1619,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 101.199 | 101.607 | 104.501 | 96.210 | 104.501 |
 | run-view | 5 | 143.724 | 137.865 | 165.232 | 135.965 | 165.232 |
 
+
+<!-- trace-bench:e325c527dc81242895a27ee002c842f83fe22593 -->
+## 2026-04-22 23:03:59 UTC
+
+- PR: [#1275](https://github.com/pingcap/agent-git-service/pull/1275) fix: unify tenant context key - multi-tenant isolation (#1245)
+- PR resolution: resolved
+- Author: @EricZequan
+- PR merged at: 2026-04-22T23:01:48Z
+- Merge commit: `e325c527dc81242895a27ee002c842f83fe22593`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24807113103)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 52.709 | 53.666 | 54.364 | 50.128 | 54.364 |
+| auth-status | 5 | 57.854 | 56.810 | 62.372 | 55.094 | 62.372 |
+| auth-logout | 5 | 42.767 | 42.600 | 44.469 | 41.222 | 44.469 |
+| repo-create | 5 | 72.374 | 72.424 | 77.735 | 68.383 | 77.735 |
+| repo-view | 5 | 90.845 | 91.335 | 94.832 | 86.485 | 94.832 |
+| repo-clone | 5 | 173.031 | 172.437 | 178.686 | 169.114 | 178.686 |
+| issue-create | 5 | 170.610 | 168.953 | 185.670 | 161.302 | 185.670 |
+| issue-list | 5 | 67.208 | 66.956 | 72.238 | 62.616 | 72.238 |
+| issue-view | 5 | 86.898 | 87.218 | 89.349 | 83.997 | 89.349 |
+| pr-create | 5 | 294.116 | 300.799 | 306.987 | 273.810 | 306.987 |
+| pr-list | 5 | 88.854 | 86.098 | 94.912 | 84.964 | 94.912 |
+| pr-view | 5 | 169.060 | 170.045 | 181.965 | 157.016 | 181.965 |
+| pr-merge | 5 | 177.374 | 168.523 | 203.505 | 164.024 | 203.505 |
+| workflow-list | 5 | 59.623 | 59.619 | 61.697 | 57.494 | 61.697 |
+| workflow-run | 5 | 120.768 | 109.014 | 171.671 | 105.491 | 171.671 |
+| run-view | 5 | 151.442 | 151.565 | 160.173 | 143.272 | 160.173 |
+

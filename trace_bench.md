@@ -1681,3 +1681,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 114.574 | 108.808 | 141.182 | 103.437 | 141.182 |
 | run-view | 5 | 144.256 | 143.969 | 147.769 | 139.353 | 147.769 |
 
+
+<!-- trace-bench:f2c96c3bf1e07783af6cb19e9c131a0e6ad4a077 -->
+## 2026-04-23 06:10:08 UTC
+
+- PR: [#1273](https://github.com/pingcap/agent-git-service/pull/1273) fix: implement OAuth device code flow security (#1249)
+- PR resolution: resolved
+- Author: @EricZequan
+- PR merged at: 2026-04-23T06:08:05Z
+- Merge commit: `f2c96c3bf1e07783af6cb19e9c131a0e6ad4a077`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24819785101)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 54.875 | 55.524 | 56.625 | 51.958 | 56.625 |
+| auth-status | 5 | 55.157 | 54.524 | 58.434 | 53.346 | 58.434 |
+| auth-logout | 5 | 43.435 | 43.331 | 45.394 | 42.051 | 45.394 |
+| repo-create | 5 | 66.351 | 65.822 | 71.319 | 63.193 | 71.319 |
+| repo-view | 5 | 96.294 | 97.849 | 100.112 | 91.101 | 100.112 |
+| repo-clone | 5 | 164.028 | 159.965 | 188.753 | 152.646 | 188.753 |
+| issue-create | 5 | 150.206 | 149.442 | 156.714 | 146.396 | 156.714 |
+| issue-list | 5 | 64.134 | 64.300 | 66.787 | 62.134 | 66.787 |
+| issue-view | 5 | 90.261 | 90.510 | 95.927 | 83.170 | 95.927 |
+| pr-create | 5 | 252.301 | 247.736 | 279.310 | 238.019 | 279.310 |
+| pr-list | 5 | 76.658 | 76.703 | 79.384 | 75.053 | 79.384 |
+| pr-view | 5 | 137.155 | 137.524 | 139.188 | 134.638 | 139.188 |
+| pr-merge | 5 | 151.573 | 151.088 | 156.399 | 147.386 | 156.399 |
+| workflow-list | 5 | 58.470 | 58.765 | 64.745 | 54.568 | 64.745 |
+| workflow-run | 5 | 105.648 | 100.272 | 124.455 | 98.041 | 124.455 |
+| run-view | 5 | 139.981 | 138.198 | 154.376 | 133.003 | 154.376 |
+

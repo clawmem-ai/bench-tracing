@@ -2146,3 +2146,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 209.085 | 224.067 | 237.446 | 158.690 | 237.446 |
 | run-view | 5 | 146.021 | 137.892 | 181.309 | 134.357 | 181.309 |
 
+
+<!-- trace-bench:0617ce5c07c6bebe26357a0beb17fb3c9370b921 -->
+## 2026-04-26 16:25:05 UTC
+
+- PR: [#1314](https://github.com/pingcap/agent-git-service/pull/1314) feat: add GraphQL createBlob and createTree mutations
+- PR resolution: resolved
+- Author: @EricZequan
+- PR merged at: 2026-04-26T16:22:50Z
+- Merge commit: `0617ce5c07c6bebe26357a0beb17fb3c9370b921`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/24961342770)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 55.426 | 56.176 | 57.317 | 50.964 | 57.317 |
+| auth-status | 5 | 57.441 | 56.644 | 59.833 | 55.153 | 59.833 |
+| auth-logout | 5 | 38.783 | 37.958 | 41.416 | 37.292 | 41.416 |
+| repo-create | 5 | 64.116 | 63.560 | 66.674 | 62.855 | 66.674 |
+| repo-view | 5 | 88.814 | 89.312 | 92.394 | 85.924 | 92.394 |
+| repo-clone | 5 | 171.148 | 161.673 | 201.524 | 160.704 | 201.524 |
+| issue-create | 5 | 166.593 | 161.776 | 198.149 | 153.784 | 198.149 |
+| issue-list | 5 | 66.977 | 66.510 | 74.038 | 63.278 | 74.038 |
+| issue-view | 5 | 92.772 | 93.294 | 95.136 | 87.584 | 95.136 |
+| pr-create | 5 | 270.823 | 271.909 | 301.145 | 247.537 | 301.145 |
+| pr-list | 5 | 86.872 | 86.377 | 93.416 | 82.328 | 93.416 |
+| pr-view | 5 | 148.549 | 148.525 | 150.666 | 145.086 | 150.666 |
+| pr-merge | 5 | 158.122 | 159.170 | 168.411 | 148.040 | 168.411 |
+| workflow-list | 5 | 58.165 | 58.217 | 61.156 | 55.428 | 61.156 |
+| workflow-run | 5 | 221.320 | 194.598 | 280.128 | 178.064 | 280.128 |
+| run-view | 5 | 158.661 | 160.913 | 169.901 | 148.148 | 169.901 |
+

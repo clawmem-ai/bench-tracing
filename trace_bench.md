@@ -2518,3 +2518,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 221.167 | 239.671 | 290.643 | 151.521 | 290.643 |
 | run-view | 5 | 151.064 | 147.478 | 161.807 | 146.511 | 161.807 |
 
+
+<!-- trace-bench:17c7e06d806849539d17249d7e6e3c6a7bb4b969 -->
+## 2026-04-30 14:25:08 UTC
+
+- PR: [#1333](https://github.com/pingcap/agent-git-service/pull/1333) feat: publish ClawMem OpenAPI extension spec
+- PR resolution: resolved
+- Author: @EricZequan
+- PR merged at: 2026-04-30T14:22:40Z
+- Merge commit: `17c7e06d806849539d17249d7e6e3c6a7bb4b969`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/25170801916)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 53.204 | 53.051 | 54.495 | 51.353 | 54.495 |
+| auth-status | 5 | 52.191 | 52.081 | 52.996 | 51.012 | 52.996 |
+| auth-logout | 5 | 40.736 | 40.639 | 42.184 | 39.805 | 42.184 |
+| repo-create | 5 | 72.523 | 65.337 | 99.849 | 63.117 | 99.849 |
+| repo-view | 5 | 92.749 | 88.808 | 105.811 | 86.325 | 105.811 |
+| repo-clone | 5 | 162.392 | 162.435 | 164.699 | 159.533 | 164.699 |
+| issue-create | 5 | 145.400 | 145.481 | 150.307 | 140.874 | 150.307 |
+| issue-list | 5 | 65.780 | 65.526 | 67.284 | 64.801 | 67.284 |
+| issue-view | 5 | 88.993 | 86.973 | 96.150 | 84.665 | 96.150 |
+| pr-create | 5 | 263.989 | 259.094 | 289.724 | 253.313 | 289.724 |
+| pr-list | 5 | 74.127 | 73.045 | 77.667 | 71.145 | 77.667 |
+| pr-view | 5 | 137.256 | 138.065 | 140.701 | 132.224 | 140.701 |
+| pr-merge | 5 | 166.622 | 160.163 | 201.038 | 154.695 | 201.038 |
+| workflow-list | 5 | 54.835 | 54.184 | 61.185 | 50.970 | 61.185 |
+| workflow-run | 5 | 194.720 | 181.977 | 265.582 | 145.820 | 265.582 |
+| run-view | 5 | 134.714 | 133.280 | 141.210 | 132.249 | 141.210 |
+

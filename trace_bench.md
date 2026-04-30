@@ -2270,3 +2270,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 197.257 | 171.937 | 313.670 | 154.694 | 313.670 |
 | run-view | 5 | 136.922 | 133.154 | 161.760 | 125.969 | 161.760 |
 
+
+<!-- trace-bench:374265182975de09ab0cdbf4cd93afbceaac7379 -->
+## 2026-04-30 08:22:14 UTC
+
+- PR: [#1322](https://github.com/pingcap/agent-git-service/pull/1322) docs: update GitHub API compatibility matrix
+- PR resolution: resolved
+- Author: @zhangyangyu
+- PR merged at: 2026-04-30T08:20:03Z
+- Merge commit: `374265182975de09ab0cdbf4cd93afbceaac7379`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/25155107173)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 52.614 | 52.593 | 53.136 | 52.054 | 53.136 |
+| auth-status | 5 | 56.900 | 54.209 | 67.579 | 52.808 | 67.579 |
+| auth-logout | 5 | 44.558 | 44.161 | 46.632 | 43.506 | 46.632 |
+| repo-create | 5 | 67.895 | 67.521 | 70.246 | 66.008 | 70.246 |
+| repo-view | 5 | 90.349 | 88.178 | 97.124 | 86.289 | 97.124 |
+| repo-clone | 5 | 169.087 | 168.774 | 171.604 | 167.021 | 171.604 |
+| issue-create | 5 | 152.707 | 151.407 | 157.172 | 150.438 | 157.172 |
+| issue-list | 5 | 70.938 | 69.788 | 78.533 | 66.800 | 78.533 |
+| issue-view | 5 | 94.177 | 93.358 | 97.351 | 91.658 | 97.351 |
+| pr-create | 5 | 284.490 | 287.899 | 290.408 | 276.379 | 290.408 |
+| pr-list | 5 | 83.967 | 83.043 | 87.917 | 80.222 | 87.917 |
+| pr-view | 5 | 142.161 | 142.484 | 144.211 | 140.115 | 144.211 |
+| pr-merge | 5 | 163.166 | 162.582 | 166.296 | 161.456 | 166.296 |
+| workflow-list | 5 | 67.986 | 65.829 | 84.770 | 59.708 | 84.770 |
+| workflow-run | 5 | 212.926 | 230.572 | 291.988 | 152.146 | 291.988 |
+| run-view | 5 | 145.523 | 139.840 | 160.931 | 138.225 | 160.931 |
+

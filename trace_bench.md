@@ -2704,3 +2704,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 201.259 | 196.353 | 236.264 | 172.024 | 236.264 |
 | run-view | 5 | 150.993 | 141.023 | 191.810 | 140.174 | 191.810 |
 
+
+<!-- trace-bench:69843e70982ac96b1ce8aa6623c4f1bd8a110db2 -->
+## 2026-05-01 00:09:21 UTC
+
+- PR: [#1342](https://github.com/pingcap/agent-git-service/pull/1342) fix: add conditional ETag support to notifications
+- PR resolution: resolved
+- Author: @EricZequan
+- PR merged at: 2026-05-01T00:07:01Z
+- Merge commit: `69843e70982ac96b1ce8aa6623c4f1bd8a110db2`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/25195595828)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 48.276 | 49.314 | 50.810 | 45.647 | 50.810 |
+| auth-status | 5 | 48.094 | 48.344 | 49.778 | 46.453 | 49.778 |
+| auth-logout | 5 | 36.670 | 36.373 | 38.195 | 35.758 | 38.195 |
+| repo-create | 5 | 63.001 | 62.604 | 66.890 | 60.478 | 66.890 |
+| repo-view | 5 | 84.892 | 86.257 | 86.567 | 80.845 | 86.567 |
+| repo-clone | 5 | 164.150 | 164.723 | 165.804 | 161.164 | 165.804 |
+| issue-create | 5 | 151.323 | 150.576 | 155.258 | 149.632 | 155.258 |
+| issue-list | 5 | 68.989 | 68.352 | 71.372 | 66.733 | 71.372 |
+| issue-view | 5 | 89.468 | 90.370 | 93.745 | 84.623 | 93.745 |
+| pr-create | 5 | 278.165 | 275.288 | 302.235 | 267.871 | 302.235 |
+| pr-list | 5 | 81.826 | 81.341 | 85.810 | 78.751 | 85.810 |
+| pr-view | 5 | 142.153 | 141.817 | 146.892 | 139.593 | 146.892 |
+| pr-merge | 5 | 170.885 | 166.877 | 186.638 | 163.587 | 186.638 |
+| workflow-list | 5 | 60.027 | 59.694 | 62.184 | 58.724 | 62.184 |
+| workflow-run | 5 | 201.464 | 199.750 | 214.928 | 187.088 | 214.928 |
+| run-view | 5 | 143.777 | 134.979 | 178.246 | 131.248 | 178.246 |
+

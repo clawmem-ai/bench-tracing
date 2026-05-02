@@ -2797,3 +2797,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 192.166 | 173.662 | 261.198 | 162.193 | 261.198 |
 | run-view | 5 | 134.263 | 133.532 | 137.410 | 132.748 | 137.410 |
 
+
+<!-- trace-bench:709492949df9d2dfa98c1ab3edf9815d526441f7 -->
+## 2026-05-02 04:20:50 UTC
+
+- PR: [#1351](https://github.com/pingcap/agent-git-service/pull/1351) feat: add wiki backlinks endpoint
+- PR resolution: resolved
+- Author: @EricZequan
+- PR merged at: 2026-05-02T04:18:43Z
+- Merge commit: `709492949df9d2dfa98c1ab3edf9815d526441f7`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/25243582350)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 46.711 | 45.944 | 50.340 | 45.331 | 50.340 |
+| auth-status | 5 | 50.261 | 49.266 | 56.849 | 46.728 | 56.849 |
+| auth-logout | 5 | 38.179 | 37.387 | 40.673 | 35.996 | 40.673 |
+| repo-create | 5 | 62.827 | 61.489 | 70.823 | 57.539 | 70.823 |
+| repo-view | 5 | 86.396 | 86.306 | 91.935 | 82.459 | 91.935 |
+| repo-clone | 5 | 160.688 | 159.774 | 169.618 | 153.839 | 169.618 |
+| issue-create | 5 | 159.861 | 156.551 | 175.523 | 149.347 | 175.523 |
+| issue-list | 5 | 68.285 | 68.891 | 70.820 | 65.037 | 70.820 |
+| issue-view | 5 | 93.085 | 91.850 | 97.479 | 90.672 | 97.479 |
+| pr-create | 5 | 281.542 | 283.355 | 285.023 | 276.377 | 285.023 |
+| pr-list | 5 | 79.688 | 80.250 | 84.495 | 74.273 | 84.495 |
+| pr-view | 5 | 157.406 | 152.739 | 194.502 | 140.697 | 194.502 |
+| pr-merge | 5 | 160.585 | 161.949 | 162.919 | 155.342 | 162.919 |
+| workflow-list | 5 | 55.278 | 54.211 | 61.092 | 53.363 | 61.092 |
+| workflow-run | 5 | 189.742 | 189.099 | 228.762 | 153.635 | 228.762 |
+| run-view | 5 | 140.054 | 135.303 | 152.803 | 132.576 | 152.803 |
+

@@ -3107,3 +3107,34 @@ Entries are keyed by merge commit SHA so reruns can skip duplicates.
 | workflow-run | 5 | 205.346 | 206.566 | 253.947 | 156.665 | 253.947 |
 | run-view | 5 | 155.649 | 147.504 | 179.983 | 140.701 | 179.983 |
 
+
+<!-- trace-bench:c0b79d46f320c6e366d645786f6d925075a312bb -->
+## 2026-05-03 03:26:06 UTC
+
+- PR: [#1364](https://github.com/pingcap/agent-git-service/pull/1364) feat: rewrite inbound wiki references when moving wiki pages
+- PR resolution: resolved
+- Author: @EricZequan
+- PR merged at: 2026-05-03T03:22:31Z
+- Merge commit: `c0b79d46f320c6e366d645786f6d925075a312bb`
+- Workflow run: [run](https://github.com/pingcap/agent-git-service/actions/runs/25268691571)
+- Bench command: `scripts/bench-gh.sh --runs 5 --warmups 1`
+
+| scenario | n | mean_ms | p50_ms | p95_ms | min_ms | max_ms |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| auth-login | 5 | 46.626 | 47.538 | 47.867 | 44.358 | 47.867 |
+| auth-status | 5 | 48.417 | 48.172 | 49.756 | 47.351 | 49.756 |
+| auth-logout | 5 | 37.161 | 37.491 | 38.683 | 35.796 | 38.683 |
+| repo-create | 5 | 59.708 | 59.958 | 61.469 | 57.873 | 61.469 |
+| repo-view | 5 | 89.207 | 82.136 | 112.726 | 80.770 | 112.726 |
+| repo-clone | 5 | 155.348 | 155.198 | 157.224 | 152.991 | 157.224 |
+| issue-create | 5 | 151.677 | 149.686 | 171.432 | 142.967 | 171.432 |
+| issue-list | 5 | 61.911 | 61.199 | 65.279 | 60.302 | 65.279 |
+| issue-view | 5 | 84.216 | 84.483 | 84.751 | 83.506 | 84.751 |
+| pr-create | 5 | 266.557 | 262.889 | 290.375 | 256.397 | 290.375 |
+| pr-list | 5 | 75.272 | 74.978 | 78.136 | 73.358 | 78.136 |
+| pr-view | 5 | 137.954 | 136.974 | 144.892 | 134.940 | 144.892 |
+| pr-merge | 5 | 156.632 | 152.179 | 169.229 | 150.992 | 169.229 |
+| workflow-list | 5 | 57.116 | 57.151 | 59.198 | 54.334 | 59.198 |
+| workflow-run | 5 | 206.620 | 190.580 | 310.585 | 145.633 | 310.585 |
+| run-view | 5 | 140.748 | 139.408 | 145.714 | 137.331 | 145.714 |
+
